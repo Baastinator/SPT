@@ -1,0 +1,108 @@
+.back {
+  background-image: url("/assets/background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+
+  .main {
+    background-image: url("/assets/parchment.jpg");
+    border: 2px solid black;
+    border-radius: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 126vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h1.header {
+      margin-top: 20px;
+
+      span {
+        opacity: 0;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .calculator {
+        .lvl {
+          display: flex;
+          font-size: 25px;
+          margin-bottom: 10px;
+
+          input {
+            font-size: 30px;
+            height: 30px;
+            width: 100px;
+            margin-bottom: 2px;
+          }
+        }
+
+        .nums {
+          display: flex;
+          flex-direction: row;
+          font-size: 25px;
+          align-items: flex-end;
+
+
+          div {
+            display: flex;
+            flex-direction: column;
+          }
+
+          span {
+            font-size: 30px;
+          }
+
+          input {
+            font-size: 30px;
+            height: 30px;
+            width: 100px;
+            margin-bottom: 2px;
+          }
+        }
+
+        .mngBtns {
+          margin-top: 5px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .castBtns {
+          margin-top: 10px;
+          display: flex;
+          max-width: 228px;
+          flex-wrap: wrap;
+
+          button {
+            width: 65px;
+            font-size: 15px;
+            margin: 2px 5px 2px 5px;
+          }
+        }
+      }
+
+      .pointTable {
+        margin-left: 30px;
+        background-color: rgba(0, 0, 0, 0.0625);
+        border: 1px solid rgba(0,0,0,1);
+        padding: 10px 15px 10px 15px;
+
+        ul {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
